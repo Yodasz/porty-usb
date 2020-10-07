@@ -1,0 +1,151 @@
+body {background-color: brown
+}
+
+#mainboard {
+    background-image: url("../img/667859_2_i1064.jpg") ;
+    background-size: contain;
+    width:1000px;
+    height: 900px;
+    background-repeat: no-repeat;
+
+
+}
+#cpu,
+#ram,
+#gniazda,
+#pcie,
+#atx,
+#bios
+
+{
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/drawing-1.svg");
+    position: absolute;
+    top: 220px;
+    left: 370px;
+}
+#ram{
+        top:220px;
+        left: 600px;
+    }
+#gniazda {
+    top: 200px;
+    left: 100px;
+
+}
+#pcie {
+    top: 700px;
+    left: 300px;
+
+
+
+}
+#atx {
+    top: 350px;
+    left: 700px;
+
+
+
+}
+#bios{
+top: 550px;
+    left: 100px;
+}
+
+#cpu .tooltiptext,
+#ram .tooltiptext,
+#gniazda .tooltiptext,
+#pcie .tooltiptext,
+#atx .tooltiptext,
+#bios .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#cpu:hover .tooltiptext  {
+    visibility: visible;
+}
+#ram:hover .tooltiptext  {
+    visibility: visible;
+}
+#gniazda:hover .tooltiptext  {
+    visibility: visible;
+}
+#pcie:hover .tooltiptext  {
+    visibility: visible;
+}
+#atx:hover .tooltiptext  {
+    visibility: visible;
+}
+#bios:hover .tooltiptext  {
+    visibility: visible;
+}
+
+#cpuInfo .describe,
+#ramInfo .describe,
+#pcieInfo .describe,
+#atxInfo .describe,
+#gniazdaInfo .describe,
+#biosInfo .describe
+{
+    background-image: url("../img/1procek.png");
+    background-position: center;
+    padding: 10px;
+    width: 80%;
+    height: 400px;
+    color: white;
+    text-shadow: black 2px 2px 5px;
+    font-size: 1.2em;
+    z-index: -120;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: rgba(0,0,0,0.5)10px 10px 5px;
+}
+#ramInfo .describe{
+    background-image: url("../img/ramxD.png");
+}
+#pcieInfo .describe{
+    background-image: url("../img/pcioe.png");
+}
+#atxInfo .describe{
+    background-image: url("../img/zasilacz.png");
+}
+#gniazdaInfo .describe{
+    background-image: url("../img/WEJSCIA.png");
+}
+#biosInfo .describe{
+    background-image: url("../img/WEJSCIA.png");
+}
+#frycel{
+display: flex;
+    width: 100%;}
+
+ #frych{
+
+     width: 50%;
+ }
+
+#fresk
+{
+    width: 50%;
+
+}
+
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
